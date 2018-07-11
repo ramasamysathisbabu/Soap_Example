@@ -15,7 +15,7 @@ public class GreetingClient {
 		Service service = Service.create(wsdlUrl, qName);
 		OrderService orderService = service.getPort(OrderService.class);
 		
-		System.out.println(Arrays.asList(orderService.getOrders()));
+		System.out.println(orderService.getOrders());
 		
 	}
 
